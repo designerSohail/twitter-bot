@@ -1,0 +1,25 @@
+{
+  "name": "twitter_bot",
+  "version": "1.0.0",
+  "description": "Twitter bot",
+  "main": "bot.js",
+  "scripts": {
+    "start" : "node bot.js",
+    "test": "bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designerSohail/twitter-bot.git"
+  },
+  "keywords": [
+    "twiter",
+    "bot",
+    "twitbot"
+  ],
+  "author": "designersohal786@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designerSohail/twitter-bot/issues"
+  },
+  "homepage": "https://github.com/designerSohail/twitter-bot#readme"
+}
