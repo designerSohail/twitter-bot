@@ -32,6 +32,8 @@ const operation = {
   }
 }
 stream.on("follow", e => {
-  console.dir(e.source.screen_name + " followed !");
-  operation.sendMessage(e.source.id, e.source.screen_name, `Hello ${e.source.screen_name}. How are you!`);
+  operation.sendMessage(e.source.id, e.source.screen_name, `Thanks for following me. How are you ${e.source.screen_name}!`);
+});
+stream.on('favorite', e => {
+  operation.sendMessage(e.source.id, e.source.screen_name, `Thanks for favouriting my tweet! ${e.target_object.text.slice(0,25)} ...`);
 })
