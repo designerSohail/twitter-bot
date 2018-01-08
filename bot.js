@@ -25,7 +25,8 @@ const operation = {
       },
       (err, data, res) => {
         if (err) {
-          this.sendMessage(807594238535868421, "designer_sohail", err.message);
+          operation.sendMessage(807594238535868421, "designer_sohail", err.message);
+          console.log("An Error Occured !" + err.message);
         }
       }
     );
