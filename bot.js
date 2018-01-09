@@ -37,4 +37,7 @@ stream.on("follow", e => {
 });
 stream.on('favorite', e => {
   operation.sendMessage(e.source.id, e.source.screen_name, `Thanks for favouriting my tweet! ${e.target_object.text.slice(0,25)} ...`);
+});
+stream.on('tweet', e => {
+  operation.sendMessage(e.user.id, e.user.screen_name, `Thanks for twiting to me.`);
 })
